@@ -10,6 +10,7 @@
     "@types/node": "^16.11.65",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "axios": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -39,5 +40,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.4",
+    "babel-jest": "^29.1.2",
+    "jest-watch-typeahead": "^0.6.5"
+  },
+  "jest": {
+   "transformIgnorePatterns": ["node_modules/(?!axios)"]
   }
 }
